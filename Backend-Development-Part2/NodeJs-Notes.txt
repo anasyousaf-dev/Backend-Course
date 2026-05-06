@@ -1,0 +1,55 @@
+📘 Node.js Notes
+What is Node.js?
+➜ NodeJs is a Javascript runtime environment.
+
+❓ Q: Why do we need Node.js for Backend?
+Problem:
+Js se backend nhi ban sakta
+kyuki js ke pass wo functionlities nhi ha jinse backend banta ha
+
+👨‍💻 Ryan Dahl’s Thinking
+ryan dahl isne socha js se backend banna chaiye
+Google chrome ka v8 engine ka code open source hai
+and ryan dahl us code mein chhedkhaani kar raha hai
+kyuki chrome ka v8 engine bana ha c++ mein
+
+💡 Main Idea
+Ryan Dahl ne socha:
+
+humein to JS MEIN Code karna hai
+
+❓ Q: How then Ryan Dahl created Node.js?
+Step-by-Step
+1️⃣
+
+Hum js ka code likhenge
+
+⬇
+
+2️⃣
+
+jo ki wrapper layer of js receives karegi
+
+⬇
+
+3️⃣
+
+and wo code v8 engine ke c++ modules ky sath ek server create karega
+
+🌍 Node.js Environment
+Jab tak NodeJs chalaye ga
+tab tak wo ek environment deta ha server banane ke liye
+
+Http module
+protocols - rules for communication(internet par kuch bhi karne ke liye rules hote hain jinhone internet banaya hai,ab un rules ko 
+follow karna zaruri hai,aur ye rules follow ho islye ye rules  ap ke operating system ke software mein pre-installed aate hain)
+http - protocol for communication between client and server
+yahi protocol hai ye rule hai jisko follow kare bina ap internet pe naa hi kuch bhej sakte ho,na hi kuch mangwa sakte ho
+
+🔥 Short Summary
+Concept          	Meaning
+JavaScript	   Frontend language
+Problem	JS     backend nhi bana sakta tha
+V8 Engine	   Chrome ka JS engine
+Ryan Dahl	   Node.js creator
+Node.js	       JS ko backend powers deta hai

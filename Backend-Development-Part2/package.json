@@ -1,0 +1,21 @@
+{
+  "name": "backend-course",
+  "version": "1.0.0",
+  "description": "A hands-on learning journey through **backend web development** — the server-side half of the MERN stack (MongoDB, Express.js, Node.js). This repository documents notes, exercises, projects, and code written while studying backend development from the ground up.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anasyousaf-dev/Backend-Course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/anasyousaf-dev/Backend-Course/issues"
+  },
+  "homepage": "https://github.com/anasyousaf-dev/Backend-Course#readme"
+}
