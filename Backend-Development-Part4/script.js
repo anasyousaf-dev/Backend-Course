@@ -63,3 +63,12 @@ app.listen(3000);
 
 // Handling requests and responses
                                         // Error handling in Express
+
+
+// app.get('/about',(req,res,next)=>{
+    // return next(new Error("This is an error"));
+// })
+// app.use((err,req,res,next)=>{
+//     console.log(err);
+//     res.status(500).send("Something went wrong");
+// })                                        
