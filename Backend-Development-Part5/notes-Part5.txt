@@ -1,0 +1,26 @@
+form handling and working with forms
+handle backend process of forms and making sure the data coming from any frontend library
+,farework,template engines,we still handle it with backend
+
+                                    Q1: How to install cookie parser
+Command: npm i cookie-parser
+                                     Q2: Session and cookies
+hum log kuch bhi data frontend par browser par rakh sakte hai cookies ke through
+and jab bhi ap kuch bhi request  backend par karoge wo frontend par saved data automattically
+backend par chala jaye ga
+
+Example:
+
+ mana facebook sy request ki k mujhe picture do,facebook meray sy pochay ga ap kon ho,apka id kya hai,apka password kya hai,mein facebook ko data donga,facebook mera data dekhay ga or phr mujhe response dega in the form of picture dega ab next time phr next mein post like karonga toh facebook mujhe pochay ga ap kon ho,mein facebook ko data donga,facebook mera data dekhay ga or phr mujhe response dega in the form of like kar dega,ye bhot mushkil hota hai har bar login karna
+
+isliye hum session aur cookies ka use karte hai,jab ham start mein login karay gye or tu server hamany response dega or sath mein 1 string dega jise hum cookie mein store kar lenge or ye frontend par save hoga,ab jab bhi ham request karay gye tu hamara browser wo  request ko or string ko  1sath server par bhej dega or server us string ko dekh kar hamare data ko access kar lega or hame response dega,ab hame baar baar login karne ki zarurat nahi hai,  
+
+ Cookie ky base par  server sy connected hona frontend ka,osay kahty hai session,session ka matlab hota hai jab ham login karte hai tu hamara session start ho jata hai or jab ham logout karte hai tu hamara session end ho jata hai,session ke through ham apne data ko save kar sakte hai or jab bhi ham request karay gye tu hamara data server par chala jaye ga,ye bhot hi important hota hai web development mein
+
+ jab ham cookie remove karty ha tu hamara session end ho jata hai,
+ or jab ham session end karte hai tu hamara cookie remove ho jata hai,
+ ye dono ek dusre ke sath connected hote hai,
+ or jab ham login karte hai tu hamara session start ho jata hai or jab ham logout karte hai tu hamara session end ho jata hai
+
+ Cookie is used in authentication,authorization,session management,personalization,tracking and analytics,security and it is also used to save all the data in the browser,so that we can access it later on when we need it,so cookie is very important in web development.
+ 
