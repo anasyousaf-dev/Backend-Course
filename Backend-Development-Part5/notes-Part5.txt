@@ -24,3 +24,14 @@ isliye hum session aur cookies ka use karte hai,jab ham start mein login karay g
 
  Cookie is used in authentication,authorization,session management,personalization,tracking and analytics,security and it is also used to save all the data in the browser,so that we can access it later on when we need it,so cookie is very important in web development.
  
+
+
+
+ Question: 
+ app.use(express.json());
+app.use(express.urlencoded({ extended: true })); 
+
+what is the use of these two lines of code in express.js?
+
+ Full Explanation:
+In Express.js, the lines of code `app.use(express.json())` and `app.use(express.urlencoded({ extended: true }))` are middleware functions that are used to parse incoming request bodies in different formats.
