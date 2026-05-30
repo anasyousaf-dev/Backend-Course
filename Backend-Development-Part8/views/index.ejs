@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJS Practice</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen p-10">
+
+    <div class="max-w-6xl mx-auto flex gap-10 flex-wrap">
+
+        <!-- Form Section -->
+        <form action="/create" method="post" class="bg-white p-6 rounded-xl shadow-lg w-full md:w-[35%]">
+
+            <h1 class="text-3xl font-bold mb-6 text-gray-800">
+                Create Task
+            </h1>
+
+            <div class="flex flex-col gap-4">
+
+                <input name="title" type="text" placeholder="Write your Title here...."
+                    class="border border-gray-300 p-3 rounded-lg outline-none focus:ring-2 focus:ring-blue-400">
+
+                <textarea name="details" placeholder="Write details here...."
+                    class="border border-gray-300 p-3 rounded-lg h-32 outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+
+                <input type="submit" value="Create Task"
+                    class="bg-blue-500 text-white py-3 rounded-lg cursor-pointer hover:bg-blue-600 transition">
+
+            </div>
+
+        </form>
+
+        <!-- Task Section -->
+        <div class="bg-white p-6 rounded-xl shadow-lg flex-1">
+
+            <h1 class="text-3xl font-bold mb-6 text-gray-800">
+                Your Tasks
+            </h1>
+
+            <div class="flex flex-col gap-4">
+
+                <% if(files.length>0) { %>
+
+                    <% files.forEach(function(val){ %>
+
+                        <div
+                            class="border border-gray-200 p-4 rounded-lg flex items-center justify-between hover:shadow-md transition">
+
+                            <h1 class="text-xl font-semibold text-gray-700">
+                                <%= val %>
+                            </h1>
+
+                            <a href="./files/<%=val%> " class="text-blue-500 font-medium hover:underline">
+                                Read More
+                            </a>
+
+                        </div>
+
+                        <% }) %>
+
+                            <% } else { %>
+
+                                <h3 class="text-gray-500 text-lg">
+                                    No Task yet
+                                </h3>
+
+                                <% } %>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
