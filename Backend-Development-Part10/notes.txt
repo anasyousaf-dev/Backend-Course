@@ -1,0 +1,172 @@
+Data Storage:
+
+Aisa place jaha par hum users ka data store kar sakte hain.
+
+Hum soch sakte hain ke files bana kar data store kar lein,
+lekin files ki limitations hoti hain:
+
+- Images properly store/manage nahi hoti
+- Large amount of data handle karna mushkil hota hai
+- Data searching aur management difficult hota hai
+- Security aur scalability issues hoti hain
+
+Isliye hum Database use karte hain.
+
+Database mein hum:
+- Images
+- Files
+- Documents
+- Videos
+- User information
+- Anything
+
+store kar sakte hain.
+
+
+Types of Databases (DBS):
+
+1- SQL
+2- NoSQL (Not Only SQL)
+
+
+
+SQL:
+
+Data ko structured form mein rakhta hai
+like:
+- Tables
+- Rows
+- Columns
+
+Examples:
+- MySQL
+- PostgreSQL
+- Oracle
+
+
+
+NoSQL:
+
+No tables.
+It stores data in objects like:
+- Documents
+- Collections
+
+Example:
+- MongoDB
+
+
+
+What and Why of MongoDB:
+
+MongoDB is a NoSQL database.
+
+It is a document-based database.
+
+It stores data in JSON-like format called BSON
+(Binary JSON).
+
+Why MongoDB is popular:
+- Flexible
+- Scalable
+- Easy to use
+- Handles large amounts of data
+- Good for modern web applications
+
+
+
+Terminologies:
+
+- Collections
+- Documents
+- Schemas
+- Keys
+- Models
+
+
+
+Structure:
+
+Database -> Collection -> Document -> Field (key:value pair)
+
+
+
+RDBMS vs MongoDB:
+
+Table      -> Collection
+Row        -> Document
+Column     -> Field
+
+
+
+Schema:
+
+Schema defines the structure of data.
+
+Example:
+
+name  -> String
+age   -> Number
+
+
+
+Model:
+
+Model is used to interact with a collection.
+
+Schema -> creates -> Model
+Model  -> works with -> Collection
+
+
+
+CODE                                   DATABASE
+
+------------------------------------------------------------
+
+mongoose.connect()        ->   connect/create database
+
+mongoose.model()          ->   create/use collection
+
+Model.create()            ->   create document
+
+
+
+Example Document:
+
+{
+   name: "Anas",
+   age: 20
+}
+
+name, age        -> keys (fields)
+"Anas", 20       -> values
+Whole object     -> document
+
+
+
+Backend Architecture:
+
+There are mainly two servers:
+
+1- Application Server
+2- Database Server
+
+
+
+Application Server:
+
+Responsible for:
+- Handling application logic
+- Receiving requests from client
+- Processing data
+- Sending response back to client
+
+
+
+Database Server:
+
+Responsible for:
+- Storing data
+- Managing data
+- Performing database operations
+- Receiving requests from application server
