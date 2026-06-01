@@ -1,0 +1,11 @@
+
+There are two servers:
+                    1- The application server (Node.js)
+                     - It is responsible for running the application code, handling requests, and managing the application's logic.
+                    2- The database server (MongoDB)
+                     - It is responsible for storing and managing the application's data, allowing the application server to retrieve and manipulate data as needed.
+ 
+What is Mongoose?
+               Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It provides a higher-level abstraction for working with MongoDB, allowing developers to define schemas for their data models, perform validation, and interact with the database using a more intuitive API. Mongoose simplifies the process of connecting to MongoDB, defining data structures, and performing CRUD (Create, Read, Update, Delete) operations on the database.
+               
+ Generally Mongoose ke through database operations asynchronous hote hain, kyunki MongoDB se data network/database I/O ke through aata hai.          

@@ -129,6 +129,9 @@ mongoose.model()          ->   create/use collection
 
 Model.create()            ->   create document
 
+mongoose.Schema()         ->   create schema
+
+
 
 
 Example Document:
